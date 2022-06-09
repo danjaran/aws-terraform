@@ -1,0 +1,2 @@
+echo "Copying prometheus.yml"
+echo -e "global:\n\tscrape_interval: 15s\nscrape_configs:\n\t- job_name: 'prometheus'\n\tscrape_interval: 5s\n\tstatic_configs:\n\t\t- targets: ['localhost:9090'] " >> /etc/prometheus/prometheus.yml
