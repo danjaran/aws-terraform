@@ -3,7 +3,7 @@ variable "aws_region" {
 }
 
 variable "instance_type" {
-  default = "t2.micro"
+  default = "t3.medium"
 }
 
 variable "aws_ami" {
@@ -19,10 +19,14 @@ variable "subnet_id" {
   default = "subnet-7ceb3034"
 }
 
+variable "subnet_id_slave" {
+  default = "subnet-627ad104"
+}
+
 variable "security_group_ids" {
   default = ["sg-20027b6a"]
 }
 
 variable "name_ec2" {
-  default = "anjar-prd-prometheus"
+  default = "anjar-prd-kubernetes"
 }

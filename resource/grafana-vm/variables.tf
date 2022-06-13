@@ -7,7 +7,8 @@ variable "instance_type" {
 }
 
 variable "aws_ami" {
-  default = "ami-0c777ba9e7c011e04" #ubuntu 18.04 in ap-southest-1
+  #default = "ami-0c777ba9e7c011e04" #ubuntu 18.04 in ap-southest-1
+  default = "ami-0fef8c1409596e79f" #centos 7 in ap-southest-1
 }
 
 variable "key_ssh" {

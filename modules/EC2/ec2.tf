@@ -13,7 +13,7 @@ resource "aws_instance" "public" {
 #    delete_on_termination = true
 #    encrypted             = false
 #    iops                  = 100
-    volume_size           = 8
+    volume_size           = 10
 #    volume_type           = "gp2"
   }
 }

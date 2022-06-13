@@ -7,7 +7,6 @@ variable "instance_type" {
 }
 
 variable "aws_ami" {
-  default = "amazonanjar"
 }
 
 variable "key_ssh" {
