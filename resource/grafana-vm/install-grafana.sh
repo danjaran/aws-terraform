@@ -1,4 +1,5 @@
 #!/bin/bash
+#### debug or check progress in /var/log/messages
 sudo yum -y update && sudo yum -y upgrade
 sudo tee /etc/yum.repos.d/grafana.repo<<EOF
 [grafana]

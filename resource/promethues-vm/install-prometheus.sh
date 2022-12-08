@@ -1,4 +1,5 @@
 #!/bin/bash
+#### debug or check progress in /var/log/messages
 sudo yum -y update && sudo yum -y upgrade
 sudo yum -y install wget curl
 useradd --no-create-home --shell /bin/false prometheus

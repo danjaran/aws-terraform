@@ -7,7 +7,7 @@ terraform {
   backend "s3" {
     bucket      = "anjar-s3-terraform"
     region      = "ap-southeast-1"
-    key         = "anjar-owner-ec2-kubernetes.tfstate" #change servicename, ex : ula-dev-catalog-management.tfstate
+    key         = "anjar-owner-ec2-kubernetes.tfstate" 
     profile     = "default"
   }
 }
@@ -31,7 +31,7 @@ module "kubernetes_slave_ec2" {
 
     count = 0
   
-    instance_type       = var.instance_type
+    instance_type       = var.instance_type_slave
     aws_ami             = var.aws_ami
     key_ssh             = var.key_ssh
     subnet_id           = var.subnet_id_slave

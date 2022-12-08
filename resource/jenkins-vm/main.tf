@@ -7,7 +7,7 @@ terraform {
   backend "s3" {
     bucket      = "anjar-s3-terraform"
     region      = "ap-southeast-1"
-    key         = "anjar-owner-ec2-jenkins.tfstate" #change servicename, ex : ula-dev-catalog-management.tfstate
+    key         = "anjar-owner-ec2-jenkins.tfstate" 
     profile     = "default"
   }
 }

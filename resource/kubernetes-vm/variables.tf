@@ -6,6 +6,10 @@ variable "instance_type" {
   default = "t3.medium"
 }
 
+variable "instance_type_slave" {
+  default = "t2.micro"
+}
+
 variable "aws_ami" {
   #default = "ami-0c777ba9e7c011e04" #ubuntu 18.04 in ap-southest-1
   default = "ami-0fef8c1409596e79f" #centos 7 in ap-southest-1
@@ -20,7 +24,8 @@ variable "subnet_id" {
 }
 
 variable "subnet_id_slave" {
-  default = "subnet-627ad104"
+  default = "subnet-7ceb3034"
+  # default = "subnet-627ad104" #subnet private
 }
 
 variable "security_group_ids" {
